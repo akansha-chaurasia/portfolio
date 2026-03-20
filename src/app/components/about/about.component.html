@@ -1,0 +1,16 @@
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p class="description">{{ about.description }}</p>
+      <div class="highlights">
+        <h3>Key Highlights</h3>
+        <ul class="highlight-list">
+          <li *ngFor="let highlight of about.highlights" class="highlight-item">
+            <span class="icon">✓</span> {{ highlight }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

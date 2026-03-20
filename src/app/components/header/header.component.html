@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <div class="hero">
+        <h1 class="name">{{ name }}</h1>
+        <p class="role">{{ role }}</p>
+      </div>
+      <nav class="navbar">
+        <button class="nav-link" (click)="scrollToSection('about')">About</button>
+        <button class="nav-link" (click)="scrollToSection('skills')">Skills</button>
+        <button class="nav-link" (click)="scrollToSection('projects')">Projects</button>
+        <button class="nav-link" (click)="scrollToSection('resume')">Resume</button>
+        <button class="nav-link" (click)="scrollToSection('contact')">Contact</button>
+      </nav>
+    </div>
+  </div>
+</header>

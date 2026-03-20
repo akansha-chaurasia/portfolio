@@ -1,0 +1,30 @@
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-content">
+      <p class="contact-intro">
+        I'm always interested in hearing about new projects and opportunities. 
+        Feel free to reach out through any of the channels below!
+      </p>
+      
+      <div class="contact-methods">
+        <div *ngFor="let method of contactMethods" class="contact-card">
+          <div class="contact-icon">{{ method.icon }}</div>
+          <h3 class="contact-label">{{ method.label }}</h3>
+          <a *ngIf="method.link" [href]="method.link" class="contact-link" target="_blank">
+            {{ method.value }}
+          </a>
+          <p *ngIf="!method.link" class="contact-value">
+            {{ method.value }}
+          </p>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <button class="email-btn" (click)="sendEmail()">
+          📧 Send Me an Email
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
